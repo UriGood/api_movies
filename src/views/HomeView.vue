@@ -12,8 +12,8 @@
         <!-- Login Form -->
         <form v-on:submit.prevent="login">
           <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" v-model="usuario">
-          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password" v-model="password">
-          <input type="submit" class="fadeIn fourth" value="Log In">
+          <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" v-model="password">
+          <input type="submit" class="fadeIn fourth" value="Entrar">
         </form>
 
         <!-- Remind Passowrd -->
@@ -30,7 +30,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
-import axios from 'axios';
+// import axios from 'axios';
 export default {
   name: 'HomeView',
   components: {
@@ -47,19 +47,20 @@ export default {
   },
   methods: {
     login() {
-      let json = {
-        "usuario": this.usuario,
-        "password": this.password,
-      };
-      axios.post('https://api.solodata.es/auth', json).then(data => {
-        if (data.data.status == 'ok') {
-          localStorage.token = data.data.result.token;
+      // let json = {
+      //   "usuario": this.usuario,
+      //   "password": this.password,
+      // };
+      // axios.post('https://api.solodata.es/auth', json).then(data => {
+        if (this.usuario == 'admin' && this.password == '123') {
+          // localStorage.token = data.data.result.token;
           this.$router.push('dashboard')
         } else {
           this.error = true;
-          this.error_msg = data.data.result.error_msg;
+          this.error_msg = 'usuario o contraseña incorrecta';
+          // this.error_msg = data.data.result.error_msg;
         }
-      });
+      // });
     }
   }
 }
@@ -176,7 +177,9 @@ input[type=reset]:active {
   transform: scale(0.95);
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] 
+{
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
