@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DashboardView from '../views/DashboardView.vue'
+import MovieView from '../views/MovieView.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path:"/dashboard",
     name: 'dashboard',
     component: DashboardView
+  },
+  {
+    path:"/movie/:id",
+    name: 'movie',
+    component: MovieView
   }
 
 ]
