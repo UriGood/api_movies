@@ -20,5 +20,16 @@ npm run build
 npm run lint
 ```
 
+### Paquetes utilizados 
+```
+npm install --save axios vue-axios
+```
+```
+npm install vue bootstrap bootstrap-vue --save
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
