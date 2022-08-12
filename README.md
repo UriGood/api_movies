@@ -1,6 +1,7 @@
 # api_movies
 
-## Project setup
+
+### Project setup
 ```
 npm install
 ```
@@ -26,6 +27,12 @@ npm install --save axios vue-axios
 ```
 ```
 npm install vue bootstrap bootstrap-vue --save
+```
+
+### Accesos 
+```
+usuario: admin 
+password: 123
 ```
 
 ### Customize configuration
