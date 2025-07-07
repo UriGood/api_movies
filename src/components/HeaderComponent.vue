@@ -2,7 +2,7 @@
     <div >
         <b-navbar toggleable="lg" type="dark" variant="info" class="navbar-custom">
             <b-navbar-brand href="#">Navegación | Aplicación Vuejs</b-navbar-brand>
-            <b-navbar-brand href="#">Desarrollada por Uriel Martínez</b-navbar-brand>
+            <b-navbar-brand href="#">Desarrollado por Uriel Martínez</b-navbar-brand>
         </b-navbar>
     </div>
 </template>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
 import DashboardView from '../views/DashboardView.vue'
 import MovieView from '../views/MovieView.vue'
 
@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    redirect: "/dashboard"
   },
   {
     path:"/dashboard",
