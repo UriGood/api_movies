@@ -3,7 +3,7 @@
     <Header />
 
     <div class="container" style="min-height: 80vh;">
-      <h5 class="m-5 text-left"><a href="/dashboard">
+      <h5 class="m-5 text-left"><a href="#/dashboard">
           <b-icon icon="arrow-left-circle"></b-icon>
           Atras
         </a></h5>

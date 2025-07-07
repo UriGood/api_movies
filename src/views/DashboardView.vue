@@ -48,7 +48,7 @@ export default {
         .then(({ results }) => {
           this.movies = results.map(m=>{
             m.poster_path = `https://image.tmdb.org/t/p/w220_and_h330_face${m.poster_path}`,
-            m.url = `/movie/${m.id}`
+            m.url = `#/movie/${m.id}`
             return m;
           })
           console.log(results);
